@@ -5,6 +5,9 @@
 # Importación de galería
 import random
 
+score = 0
+cpu_score = 0  
+
 # Aspecto visual de la aplicación en el título
 print("")
 print("")
@@ -28,7 +31,10 @@ while True:
 
 def cachipun_game():
     if idioma in ['ES']:
-        
+          
+        global score
+        global cpu_score
+
         while True:
             mano = input('Ingresa tu juego, escribe: PIEDRA, PAPEL o TIJERA: ').upper()  # convierte a mayusculas
 
@@ -44,20 +50,18 @@ def cachipun_game():
         if mano == mano_cpu:
             print('*****************************************************************************')
             print(f'Jugador escoge {mano} y CPU escoge {mano_cpu}, por lo tanto es un EMPATE -_-')
-            print('*****************************************************************************')
-            print('')
-        elif (mano =='PAPEL' and mano_cpu == 'PIEDRA') or (mano =='PIEDRA' and mano_cpu == 'TIJERA') or (mano =='TIJERA' and mano_cpu() == 'PAPEL'):
+            print('-----------------------------------------------------------------------------')
+        elif (mano =='PAPEL' and mano_cpu == 'PIEDRA') or (mano =='PIEDRA' and mano_cpu == 'TIJERA') or (mano =='TIJERA' and mano_cpu == 'PAPEL'):
+            score = score + 1 # suma puntaje a favor del humano
             print('****************************************************************************')
             print(f'Jugador escoge {mano} y CPU escoge {mano_cpu}, por lo tanto JUGADOR GANA :)')
-            print('****************************************************************************')
-            print('')
-        elif (mano =='PAPEL' and mano_cpu == 'TIJERA') or (mano =='TIJERA' and mano_cpu == 'PIEDRA') or (mano =='PIEDRA' and mano_cpu() == 'PAPEL'):
+            print('----------------------------------------------------------------------------')
+        elif (mano =='PAPEL' and mano_cpu == 'TIJERA') or (mano =='TIJERA' and mano_cpu == 'PIEDRA') or (mano =='PIEDRA' and mano_cpu == 'PAPEL'):
+            cpu_score = cpu_score + 1 # suma puntaje a favor del cpu
             print('******************************************************************************')
             print(f'Jugador escoge {mano} y CPU escoge {mano_cpu}, por lo tanto JUGADOR PIERDE :(')
-            print('******************************************************************************')
-            print('')
-
-        # print(mano_cpu)
+            print('------------------------------------------------------------------------------')
+            # print(mano_cpu)
     
 
         
@@ -75,5 +79,50 @@ def cachipun_game():
         mano_cpu = random.choice(opciones_cpu)
         print(mano_cpu)
 
+
+#mientras sea verdadero repetirá la función principal o cerrar el programa
+
+while True:
+    cachipun_game()
     
-cachipun_game()
+    while True:
+        print(f'///Puntaje Jugador = {score} Puntaje CPU = {cpu_score}///')
+        print('******************************************************************************')
+        print('')
+        
+        repetir = input('¿Desea Continuar? (S/N): ').lower()
+        print('')
+        print('') #pasa de mayúscula a minúscula
+        if repetir in ['s', 'n']: #'in' verifica lo que hay en repetir
+            break
+        else:
+            print('Por favor, ingrese S para sí o N para no.')
+    
+    if repetir == 'n':
+        
+        if score < cpu_score:
+            print('')
+            print('*************************************************')
+            print(f'PUNTAJE FINAL: Jugador {score} - CPU {cpu_score}')
+            print('TU PIERDES!!!!   :(')
+            print('*************************************************')
+            print('')
+        elif cpu_score < score:
+            print('')
+            print('*************************************************')
+            print(f'PUNTAJE FINAL: Jugador {score} - CPU {cpu_score}')
+            print('TU GANAS!!!!   :)')
+            print('*************************************************')
+            print('')
+        else:
+            print('')
+            print('*************************************************')
+            print(f'PUNTAJE FINAL: Jugador {score} - CPU {cpu_score}')
+            print('EMPATE (-_-)')
+            print('*************************************************')
+            print('')
+        print('El programa se cierra, Gracias Totales!')
+        print('')
+        break
+
+
