@@ -8,7 +8,7 @@ IMC = peso / altura²
 
 Para ello, la Organización Mundial de la Salud (OMS) ha determinado una clasificación así para distintos rangos de valores:
 
-![alt text](image.png)
+![tabla-imc](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/assets/img/tabla%20-%20imc.jpg?raw=true)
 
 
 Se usan 2 funciones, una principal ***calculadora_imc*** y otra que es usada para llamarla para la verificación de las variables que sean tipo float ***verificador_float***
@@ -40,8 +40,7 @@ Se usan 2 funciones, una principal ***calculadora_imc*** y otra que es usada par
 
 -----------------------------------------------
 
-### [Cachipun](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/cachipun.py
-)
+### [Cachipun](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/cachipun.py)
 
 El *Cachipún*, conocido también como *piedra, papel o tijera*, o en paises anglos *rock, paper, scissor* o "stone, paper, scissor*, es un juego de manos en el que existen tres elementos: la piedra que vence a la tijera rompiéndola, la tijera que vence al papel cortándoloy el papel que vence a la piedra envolviéndola, dando lugar a un círculo o ciclo cerrado. Se utiliza con mucha frecuencia para decidir quién de dos personas hará algo, tal y como se hace a veces usando una moneda, o para dirimir algún asunto.
 Para poner en práctica lo que hemos aprendido a lo largo de la unidad, se implementará un programa en Python que permite jugar al cachipún en contra del computador.
@@ -49,7 +48,7 @@ Para poner en práctica lo que hemos aprendido a lo largo de la unidad, se imple
 El programa solicita especificar que idioma escoger entre español *(ES)* e inglés *(EN)* validando el correcto ingreso de la respuesta. Posterior pide al usuario escoger una mano (piedra, papel o tijera), donde finalmente pregunta si desea jugar de nuevo, finalmente entrega un puntaje sobre la cantidad de veces que se haya repetido el juego.
 
 ##### Libreria usada
-- random : con el fin de poder seleccionar de forma aleatoria la mano del CPU
+- random : utilizada con el fin de poder seleccionar de forma aleatoria la mano del CPU
 
 ##### Variables: 
 

@@ -17,13 +17,13 @@ Aplicación que realiza el cálculo de utilidades de un negocio, son 3 casos dis
 ## [02 - Sentencias condicionales e iterativas (I)](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/tree/main/02)
 ##### [1. IMC](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/imc.py)
 
-Aplicación en Python 3.12 que calcula el Indice de Masa Corporal (IMC) y compara el resultado con tabla de categorías según la OMS. 
+Aplicación en Python 3.12 que calcula el Indice de Masa Corporal (IMC) y compara el resultado con tabla de categorías según la OMS. Para mas detalles ver [Readme.md](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/Readme.md) del proyecto.
 
 
 
 ##### [2. Cachipun](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/cachipun.py)
 
-Aplicación desarrollada en Python 3.12 sobre el juego conocido como ***Cachipun*** en Chile, ***Scissors, Paper, Stone*** en paises anglos. El juego fue desarrollado en español e inglés.
+Aplicación desarrollada en Python 3.12 sobre el juego conocido como ***Cachipun*** en Chile, ***Scissors, Paper, Stone*** en paises anglos. El juego fue desarrollado en español e inglés.Para mas detalles ver [Readme.md](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/Readme.md) del proyecto.
 
 
 -------------------------------------------------------------------------------------------
