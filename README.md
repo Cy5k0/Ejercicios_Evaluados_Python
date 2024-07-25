@@ -21,7 +21,7 @@ Aplicación en Python 3.12 que calcula el Indice de Masa Corporal (IMC) y compar
 
 
 
-##### 2. Cachipun
+##### [2. Cachipun](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/02/cachipun.py)
 
 Aplicación desarrollada en Python 3.12 sobre el juego conocido como ***Cachipun*** en Chile, ***Scissors, Paper, Stone*** en paises anglos. El juego fue desarrollado en español e inglés.
 
@@ -29,4 +29,4 @@ Aplicación desarrollada en Python 3.12 sobre el juego conocido como ***Cachipun
 -------------------------------------------------------------------------------------------
 
   
-![pythn](assets\img\pyth_1.jpeg)
+![pythn](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/assets/img/pyth_1.jpeg?raw=true)
