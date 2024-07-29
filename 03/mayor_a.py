@@ -1,3 +1,6 @@
+# aplicación que busca números mayores que el ingresado en la variable 'valor_objetivo', esta busqueda la realiza en el diccionario 'ventas'
+# La respuesta de esta busqueda es un diccionario con los datos filtrados
+
 ventas = {
     "Enero": 15000,
     "Febrero": 22000,
@@ -13,9 +16,13 @@ ventas = {
     "Diciembre": 21000,
 }
 
+
+# Función para buscar los valores mayores al ingresado
 def ventas_mayores(valor):
     return {mes: venta for mes, venta in ventas.items() if venta > valor}
 
+
+# Función para la validación del valor objetivo para que sea un enterto (int)
 def obtener_valor_objetivo():
     while True:
         try:
@@ -28,11 +35,19 @@ def filtrado_valores():
         valor_objetivo = obtener_valor_objetivo()
         filtrado = ventas_mayores(valor_objetivo)
         print(f"Ventas mayores a {valor_objetivo}:")
-        print(filtrado)
+        print(filtrado) # imprime el diccionario filtrado
         
-        continuar = input("¿Desea repetir el proceso? (s/n): ").lower()
-        if continuar != 's':
-            print("Gracias por usar la aplicación. ¡Hasta luego!")
+
+        while True:
+            continuar = input("¿Desea repetir el proceso? (s/n): ").lower()  # convierte a minúsculas
+            if continuar in ["s", "n"]:  # COn el in verifica si el valor es el solicitado
+                break
+            else:
+                print('Por favor, ingresa "s" para SI o "n" para NO.')
+
+        if continuar == ('n'):
+            print('Se cierra el programa.')
             break
+ 
 
 filtrado_valores()
