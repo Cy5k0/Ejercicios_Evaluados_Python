@@ -51,7 +51,9 @@ Se usan 3 funciones, una función ***ventas_mayores(valor)*** donde en la cual s
 
 ### [Primeros Auxilios](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/03/primeros_auxilios.py)
 
-se le solicita construir una aplicación que permita indicar los pasos a seguir ante una emergencia. Debido a que no se espera que usted sea un experto en el tema se le provee de un diagrama que explica las distintas instancias a la que se está sometido durante una emergencia.
+Se construye una aplicación que permita indicar los pasos a seguir ante una emergencia. Se provee de un diagrama que explica las distintas instancias a la que se está sometido durante una emergencia.
+
+![diagrama primeros auxilios](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/assets/img/diagrama_primeros_aux.jpg?raw=true)
 
 ##### Variables: 
 
