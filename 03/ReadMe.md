@@ -41,6 +41,7 @@ Se usan 3 funciones, una función ***ventas_mayores(valor)*** donde en la cual s
 ###### Windows
 `python mayor_a.py`
 
+
 ###### Linux y iOS
 `python3 mayor_a.py`
 
@@ -58,10 +59,10 @@ Se construye una aplicación que permita indicar los pasos a seguir ante una eme
 ##### Variables: 
 
 - nombre: contiene el nombre del paciente y es un *string*.
-- respuesta_estimulos = contiene una respuesta (S/N).
-- respuesta_respira = contiene una respuesta (S/N).
-- ambulancia = contiene la respuesta (S/N) si es que llegó o no la ambulancia.
-- signos_vida = contiene la respuesta (S/N) si es que el paciente presenta signos de vida.
+- respuesta_estimulos: contiene una respuesta (S/N).
+- respuesta_respira: contiene una respuesta (S/N).
+- ambulancia: contiene la respuesta (S/N) si es que llegó o no la ambulancia.
+- signos_vida: contiene la respuesta (S/N) si es que el paciente presenta signos de vida.
 
 Las variables *respuesta_estimulos*, *respuesta_respira*, *ambulancia* y *signos_vida* son chequeadas mediante la función **validar_respuesta(pregunta)**.
 
@@ -77,6 +78,50 @@ Las variables *respuesta_estimulos*, *respuesta_respira*, *ambulancia* y *signos
 
 ###### Linux y iOS
 `python3 primeros_auxilios.py`
+
+#### Autor
+[Francisco Colomer B](https://github.com/Cy5k0)
+
+
+-----------------------------------------------
+
+### [Fuerza Bruta](https://github.com/Cy5k0/Ejercicios_Evaluados_Python/blob/main/03/fuerza_bruta.py)
+
+Este código, llamado fuerza bruta para determinacuántos intentos son necesarios para encontrar combinaciones numéricas en minúscula.
+Para ello se ingresa un password oculto. Este password puede contener sólo combinaciones de letras y se requiere determinar su seguridad. Un mayor número de intentos implica un password más seguro:
+El programa *fuerza_bruta.py* ntenta todas las combinaciones de letras posibles, en orden alfabético, hasta que la combinación de letras sea igual a la de la contraseña indicada. Se hace este proceso letra por letra, de izquierda a derecha.
+
+● Utiliza *from string import ascii_lowercase*
+- *ascii_lowercase* es un string con todas las letras del abecedario en minúsculas (sin la ñ).
+● No considera la ñ.
+● Considera mayúsculas y minúsculas como una misma letra.
+● Se considera "intento" cada vez que se compara una letra.
+
+
+
+
+##### Variables y Funciones: 
+
+- validacion_passwd(contrasena) : Función usada para la validacion de ingreso de una contraseña correcta.
+- user_pass: Variable de tipo *string* que almacena la contraseña ingresada.
+- long_pass: variable de tipo integer que almacena la longitud de la contraseña.
+- intentos: variable del tipo integer que almacena la cantidad de intentos realizados hasta encontrar la contraseña.
+- passwrd_encontrada: almacena las letras de la contraseña a medida de que las va encontrando.
+- posicion: almacena el valor del range de la variable *long_pass*.
+- letra: almacena la letra (valor) del *ascii_lowercase*.
+
+##### Prerequisitos
+
+* Sistema Operativos: Windows 10, 11, Linux, iOS.
+* Python 3.12
+
+##### Ejecución
+
+###### Windows
+`python fuerza_bruta.py`
+
+###### Linux y iOS
+`python3 fuerza_bruta.py`
 
 #### Autor
 [Francisco Colomer B](https://github.com/Cy5k0)
