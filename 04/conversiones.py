@@ -8,7 +8,7 @@ if len(sys.argv) < 5:
     print('')
     print('!!!!!!!!!!!!!ERROR!!!!!!!!!!!!!!!!!')
     print('Por favor, ingresa exactamente 4 valores \nEJ: conversiones.py (tc sol peruano) (tc peso argentino) (tc USD) (valor a convertir en peso chileno).')
-    sys.exit(1)
+    sys.exit(1)# valor 0 para programa ejecutado correctamente , cualquier otro número para salir por error.
 
 # función para validar que el ingreso sea un valor numérico
 def validar_ingreso(valor):
