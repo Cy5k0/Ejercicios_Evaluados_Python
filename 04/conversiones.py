@@ -10,11 +10,20 @@ if len(sys.argv) < 5:
     print('Por favor, ingresa exactamente 4 valores \nEJ: conversiones.py (tc sol peruano) (tc peso argentino) (tc USD) (valor a convertir en peso chileno).')
     sys.exit(1)
 
+# función para validar que el ingreso sea un valor numérico
+def validar_ingreso(valor):
+    try:
+        return float(valor)
+    except ValueError:
+        print('')
+        print(f"Error!!!: '{valor}' no es un valor numérico.")
+        sys.exit(1) # valor 0 para programa ejecutado correctamente , cualquier otro número para salir por error.
+
 # declaración de variables, asignandose cada variable segun su índice en el argumento
-tc_solPeruano = float(sys.argv[1])
-tc_pesoArgentino = float(sys.argv[2])
-tc_USD = float(sys.argv[3])
-valorAconvertir = float(sys.argv[4])
+tc_solPeruano = validar_ingreso(sys.argv[1])
+tc_pesoArgentino = validar_ingreso(sys.argv[2])
+tc_USD = validar_ingreso(sys.argv[3])
+valorAconvertir = validar_ingreso(sys.argv[4])
 
 print('')
 print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
