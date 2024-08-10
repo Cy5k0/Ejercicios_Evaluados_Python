@@ -1,3 +1,5 @@
+# Filtrado Relevante
+
 import sys
 
 # diccionario a filtrar
@@ -25,14 +27,14 @@ def validar_opcion(opc):
         sys.exit(1)
     return opc
 
-
+# verifica que haya al menos un argumento
 if len(sys.argv) < 2:
     print('\nERROR  ! ! ! !')
     print('Debe ingresar al menos un argumento')
     print('')
     sys.exit(1)
 
-
+# verifica que no se haya ingresado mas de 2 argumentos
 if len(sys.argv) > 3:
     print('\nERROR!!!')
     print('Uso: python filtro.py <precio> <mayor/menor>')
