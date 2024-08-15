@@ -70,6 +70,6 @@ def arma_pizza():
         else:
             print("Opción no válida. Por favor, intenta de nuevo.")
 
-# Ejecución del programa
+# Ejecucta prgma
 if __name__ == "__main__":
     arma_pizza()
